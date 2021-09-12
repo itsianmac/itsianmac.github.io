@@ -1,0 +1,25 @@
+- profile:
+  initials: IM
+  name: Ian MacPherson
+  profession: ''
+  image: images/profile.jpeg
+  location: Toronto, ON
+  relocation: false
+  contact: '{firstname}mac @ yorku.eecs.ca'
+  for_hire: false
+  focus: Computer Vision
+  focus_url: ''
+  about: |
+    I am Michael Brown's Masters student in the Department of Electrical Engineering and Computer Science at York University. 
+    I have a range of experience from deep learning & computer vision, venture capital, software consulting, and sales.
+  skills:
+    - PyTorch
+    - React
+    - Django
+  tools:
+    - git
+  budget:
+    currency: $
+    min: 10
+    max: 150
+    default: 15
