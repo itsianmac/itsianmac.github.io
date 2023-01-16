@@ -1,7 +1,568 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.ee6d17c66c6c27049b3b.css" id="gatsby-global-css">.history:before{--tw-bg-opacity:1;background-color:rgba(72,83,99,var(--tw-bg-opacity));bottom:0;content:"";display:block;left:50%;position:absolute;top:0;transform:translateX(-1px);width:2px}.history-entry:nth-child(odd){align-self:flex-end;padding-left:3rem}.history-entry:nth-child(2n){align-self:flex-start;padding-right:3rem;text-align:right}.dot-bg{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-translate-y:-50%;top:50%;transform:translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.history-entry:nth-child(odd) .dot-bg{--tw-translate-x:-50%;left:0}.history-entry:nth-child(2n) .dot-bg{--tw-translate-x:50%;right:0}.history-entry:first-child .dot-bg{--tw-bg-opacity:1;background-color:rgba(255,255,255,var(--tw-bg-opacity))}.history-entry:first-child .dot{--tw-bg-opacity:1;background-color:rgba(18,95,236,var(--tw-bg-opacity))}
+<!DOCTYPE html>
+<html lang="en">
 
-/*! tailwindcss v2.1.1 | MIT License | https://tailwindcss.com */
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */:root{-moz-tab-size:4;-o-tab-size:4;tab-size:4}html{-webkit-text-size-adjust:100%;line-height:1.15}body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;margin:0}hr{color:inherit;height:0}abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=submit],button{-webkit-appearance:button}legend{padding:0}progress{vertical-align:baseline}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}button{background-color:transparent;background-image:none}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}fieldset,ol,ul{margin:0;padding:0}ol,ul{list-style:none}html{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}body{font-family:inherit;line-height:inherit}*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}hr{border-top-width:1px}img{border-style:solid}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}button{cursor:pointer}table{border-collapse:collapse}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}button,input,optgroup,select,textarea{color:inherit;line-height:inherit;padding:0}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}.bg-green-500{--tw-bg-opacity:1;background-color:rgba(16,185,129,var(--tw-bg-opacity))}.bg-back{--tw-bg-opacity:1;background-color:rgba(20,29,38,var(--tw-bg-opacity))}.bg-front{--tw-bg-opacity:1;background-color:rgba(255,255,255,var(--tw-bg-opacity))}.bg-lead{--tw-bg-opacity:1;background-color:rgba(18,95,236,var(--tw-bg-opacity))}.bg-line{--tw-bg-opacity:1;background-color:rgba(72,83,99,var(--tw-bg-opacity))}.bg-back-light{--tw-bg-opacity:1;background-color:rgba(24,34,45,var(--tw-bg-opacity))}.bg-no-repeat{background-repeat:no-repeat}.border-back{--tw-border-opacity:1;border-color:rgba(20,29,38,var(--tw-border-opacity))}.border-front{--tw-border-opacity:1;border-color:rgba(255,255,255,var(--tw-border-opacity))}.border-line{--tw-border-opacity:1;border-color:rgba(72,83,99,var(--tw-border-opacity))}.rounded-lg{border-radius:1rem}.rounded-full{border-radius:9999px}.border-solid{border-style:solid}.border-2{border-width:2px}.border{border-width:1px}.border-b-0{border-bottom-width:0}.border-r-2{border-right-width:2px}.border-t-4{border-top-width:4px}.border-r{border-right-width:1px}.cursor-pointer{cursor:pointer}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.content-center{align-content:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.font-header{font-family:Source Sans Pro,sans-serif}.font-text{font-family:Roboto,sans-serif}.font-light{font-weight:300}.font-normal{font-weight:400}.font-medium{font-weight:500}.font-semibold{font-weight:600}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-black{font-weight:900}.h-2{height:.5rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-full{height:100%}.text-xs{font-size:.75rem;line-height:1rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-lg{font-size:1.125rem}.text-lg,.text-xl{line-height:1.75rem}.text-xl{font-size:1.25rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-5xl{font-size:3rem}.leading-none,.text-5xl{line-height:1}.leading-tight{line-height:1.25}.leading-normal{line-height:1.5}.m-1{margin:.25rem}.m-2{margin:.5rem}.my-4{margin-bottom:1rem;margin-top:1rem}.my-8{margin-bottom:2rem;margin-top:2rem}.mx-auto{margin-left:auto;margin-right:auto}.mt-1{margin-top:.25rem}.mr-1{margin-right:.25rem}.mb-1{margin-bottom:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.mb-3{margin-bottom:.75rem}.mr-4{margin-right:1rem}.mb-4{margin-bottom:1rem}.mr-5{margin-right:1.25rem}.mb-5{margin-bottom:1.25rem}.mt-6{margin-top:1.5rem}.mb-6{margin-bottom:1.5rem}.mt-8{margin-top:2rem}.mt-12{margin-top:3rem}.mt-16{margin-top:4rem}.-mt-1{margin-top:-.25rem}.-ml-3{margin-left:-.75rem}.min-h-screen{min-height:100vh}.opacity-50{opacity:.5}.opacity-75{opacity:.75}.hover\:opacity-75:hover{opacity:.75}.outline-none{outline:2px solid transparent;outline-offset:2px}.overflow-hidden{overflow:hidden}.p-4{padding:1rem}.py-1{padding-bottom:.25rem;padding-top:.25rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.px-2{padding-left:.5rem;padding-right:.5rem}.py-3{padding-bottom:.75rem;padding-top:.75rem}.px-3{padding-left:.75rem;padding-right:.75rem}.py-4{padding-bottom:1rem;padding-top:1rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-12{padding-bottom:3rem;padding-top:3rem}.py-px{padding-bottom:1px;padding-top:1px}.pt-2{padding-top:.5rem}.pr-2{padding-right:.5rem}.pl-3{padding-left:.75rem}.pt-4{padding-top:1rem}.pr-4{padding-right:1rem}.pb-4{padding-bottom:1rem}.pl-4{padding-left:1rem}.pt-6{padding-top:1.5rem}.pb-6{padding-bottom:1.5rem}.pt-8{padding-top:2rem}.pb-8{padding-bottom:2rem}.pb-12{padding-bottom:3rem}.pb-16{padding-bottom:4rem}.absolute{position:absolute}.relative{position:relative}.inset-0{bottom:0;left:0;right:0;top:0}.right-0{right:0}.bottom-0{bottom:0}.resize-none{resize:none}*{--tw-shadow:0 0 transparent}.hover\:shadow-lg:hover{--tw-shadow:0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);box-shadow:var(--tw-ring-offset-shadow,0 0 transparent),var(--tw-ring-shadow,0 0 transparent),var(--tw-shadow)}*{--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,0.5);--tw-ring-offset-shadow:0 0 transparent;--tw-ring-shadow:0 0 transparent}.text-center{text-align:center}.text-right{text-align:right}.text-gray-900{--tw-text-opacity:1;color:rgba(17,24,39,var(--tw-text-opacity))}.text-back{--tw-text-opacity:1;color:rgba(20,29,38,var(--tw-text-opacity))}.text-front{--tw-text-opacity:1;color:rgba(255,255,255,var(--tw-text-opacity))}.text-lead{--tw-text-opacity:1;color:rgba(18,95,236,var(--tw-text-opacity))}.text-lead-text{--tw-text-opacity:1;color:rgba(238,238,238,var(--tw-text-opacity))}.text-back-light{--tw-text-opacity:1;color:rgba(24,34,45,var(--tw-text-opacity))}.uppercase{text-transform:uppercase}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.subpixel-antialiased{-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto}.tracking-tight{letter-spacing:-.025em}.select-none{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.align-middle{vertical-align:middle}.whitespace-pre-line{white-space:pre-line}.break-words{overflow-wrap:break-word}.break-all{word-break:break-all}.w-2{width:.5rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-12{width:3rem}.w-14{width:3.5rem}.w-auto{width:auto}.w-1\/2{width:50%}.w-2\/3{width:66.666667%}.w-1\/4{width:25%}.w-3\/4{width:75%}.w-full{width:100%}.z-0{z-index:0}.z-10{z-index:10}.gap-2{gap:.5rem}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.transform{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;transform:translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-12{--tw-translate-x:3rem}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-opacity{transition-duration:.15s;transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-shadow{transition-duration:.15s;transition-property:box-shadow;transition-timing-function:cubic-bezier(.4,0,.2,1)}.ease-linear{transition-timing-function:linear}.duration-150{transition-duration:.15s}.duration-300{transition-duration:.3s}@-webkit-keyframes spin{to{transform:rotate(1turn)}}@keyframes spin{to{transform:rotate(1turn)}}@-webkit-keyframes ping{75%,to{opacity:0;transform:scale(2)}}@keyframes ping{75%,to{opacity:0;transform:scale(2)}}@-webkit-keyframes pulse{50%{opacity:.5}}@keyframes pulse{50%{opacity:.5}}@-webkit-keyframes bounce{0%,to{-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1);transform:translateY(-25%)}50%{-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1);transform:none}}@keyframes bounce{0%,to{-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1);transform:translateY(-25%)}50%{-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1);transform:none}}.filter{--tw-blur:var(--tw-empty,/*!*/ /*!*/);--tw-brightness:var(--tw-empty,/*!*/ /*!*/);--tw-contrast:var(--tw-empty,/*!*/ /*!*/);--tw-grayscale:var(--tw-empty,/*!*/ /*!*/);--tw-hue-rotate:var(--tw-empty,/*!*/ /*!*/);--tw-invert:var(--tw-empty,/*!*/ /*!*/);--tw-saturate:var(--tw-empty,/*!*/ /*!*/);--tw-sepia:var(--tw-empty,/*!*/ /*!*/);--tw-drop-shadow:var(--tw-empty,/*!*/ /*!*/);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}@media (min-width:768px){.md\:block{display:block}.md\:text-base{font-size:1rem;line-height:1.5rem}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:mr-0{margin-right:0}.md\:max-w-screen-sm{max-width:640px}.md\:pr-8{padding-right:2rem}.md\:w-1\/4{width:25%}.md\:w-3\/4{width:75%}.md\:gap-4{gap:1rem}}@media (min-width:1024px){.lg\:rounded-lg{border-radius:1rem}.lg\:border-r{border-right-width:1px}.lg\:block{display:block}.lg\:hidden{display:none}.lg\:self-start{align-self:flex-start}.lg\:flex-1{flex:1 1 0%}.lg\:h-auto{height:auto}.lg\:mt-4{margin-top:1rem}.lg\:max-w-screen-xl{max-width:1280px}.lg\:p-8{padding:2rem}.lg\:p-px{padding:1px}.lg\:py-0{padding-bottom:0;padding-top:0}.lg\:py-2{padding-bottom:.5rem;padding-top:.5rem}.lg\:px-6{padding-left:1.5rem;padding-right:1.5rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:px-px{padding-left:1px;padding-right:1px}.lg\:pb-0{padding-bottom:0}.lg\:pr-8{padding-right:2rem}.lg\:pl-8{padding-left:2rem}.lg\:pr-12{padding-right:3rem}.lg\:pl-12{padding-left:3rem}.lg\:w-auto{width:auto}.lg\:w-1\/3{width:33.333333%}.lg\:w-2\/3{width:66.666667%}.lg\:w-1\/5{width:20%}.lg\:w-2\/5{width:40%}.lg\:w-4\/5{width:80%}}@media (min-width:1280px){.xl\:px-12{padding-right:3rem}.xl\:pl-12,.xl\:px-12{padding-left:3rem}.xl\:pr-20{padding-right:5rem}}</style><meta name="generator" content="Gatsby 3.5.1"/><title data-react-helmet="true">Ian MacPherson</title><link data-react-helmet="true" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;family=Source+Sans+Pro:wght@300;400;600;700;900&amp;display=swap"/><meta data-react-helmet="true" name="description" content="Personal page of Ian MacPherson"/><meta data-react-helmet="true" property="og:title" content="Ian MacPherson"/><meta data-react-helmet="true" property="og:description" content="Personal page of Ian MacPherson"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title" content="Ian MacPherson"/><meta data-react-helmet="true" name="twitter:description" content="Personal page of Ian MacPherson"/><script data-react-helmet="true" type="application/ld+json">{"@context":"http://schema.org/","@type":"Person","name":"Ian MacPherson","image":"/static/1433f3b2d30eab52a2ecc315a15fa8c5/profile.jpeg","jobTitle":"","sameAs":["https://linkedin.com/in/itsianmac","https://twitter.com/itsianmac","https://github.com/itsianmac"],"worksFor":{"@type":"Organization"}}</script><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper img{all:inherit;bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link as="script" rel="preload" href="/webpack-runtime-6fc40da109563e003296.js"/><link as="script" rel="preload" href="/framework-0d0fa4b1796dec5a504e.js"/><link as="script" rel="preload" href="/app-9a9fa1cda9fed2038ac5.js"/><link as="script" rel="preload" href="/1bfc9850-1d956532b124936204ba.js"/><link as="script" rel="preload" href="/commons-4155760f5a03699894f8.js"/><link as="script" rel="preload" href="/component---src-templates-index-js-3bc2c5d76aaf3437197f.js"/><link as="fetch" rel="preload" href="/page-data/index/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2903201533.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="antialiased bg-back leading-normal font-text text-front"><header class="flex justify-between p-4 lg:px-8"><span class="inline-flex w-14 h-14 lg:mt-4 font-header font-bold text-xl justify-center items-center text-center text-front border-2 border-solid border-front rounded-full">IM</span></header><div class="md:max-w-screen-sm lg:max-w-screen-xl mx-auto px-4 flex flex-wrap pt-4 my-8"><aside class="w-full lg:w-1/3 lg:border-r border-line lg:px-6 xl:px-12"><div class="flex flex-col h-full justify-between"><div><h2 class="font-header font-light text-front text-2xl leading-none mb-4 content-center"></h2><h1 class="font-header font-black text-front text-5xl leading-none break-words mb-6">Ian MacPherson</h1><div class="relative inline-block leading-none"><div data-gatsby-image-wrapper="" style="width:144px;height:144px" class="gatsby-image-wrapper rounded-full relative z-10"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#e8e8e8;width:144px;height:144px;position:relative"></div><picture><source type="image/webp" data-srcset="/static/1433f3b2d30eab52a2ecc315a15fa8c5/7512d/profile.webp 144w,/static/1433f3b2d30eab52a2ecc315a15fa8c5/654e6/profile.webp 288w" sizes="144px"/><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="144px" decoding="async" loading="lazy" data-src="/static/1433f3b2d30eab52a2ecc315a15fa8c5/17fa0/profile.jpg" data-srcset="/static/1433f3b2d30eab52a2ecc315a15fa8c5/17fa0/profile.jpg 144w,/static/1433f3b2d30eab52a2ecc315a15fa8c5/d75f5/profile.jpg 288w" alt="Ian MacPherson"/></picture><noscript><picture><source type="image/webp" srcSet="/static/1433f3b2d30eab52a2ecc315a15fa8c5/7512d/profile.webp 144w,/static/1433f3b2d30eab52a2ecc315a15fa8c5/654e6/profile.webp 288w" sizes="144px"/><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="144px" decoding="async" loading="lazy" src="/static/1433f3b2d30eab52a2ecc315a15fa8c5/17fa0/profile.jpg" srcSet="/static/1433f3b2d30eab52a2ecc315a15fa8c5/17fa0/profile.jpg 144w,/static/1433f3b2d30eab52a2ecc315a15fa8c5/d75f5/profile.jpg 288w" alt="Ian MacPherson"/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}</script></div><div class="absolute inset-0 rounded-full bg-lead z-0 transform translate-x-12"></div></div><br/><div class="inline-flex items-center bg-front mt-6 w-auto"><span class="text-lead border-r-2 border-back px-3"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg></span><span class="text-back font-header font-bold py-1 px-3 text-lg">Toronto, ON</span></div><br/><br/><div class="pt-8 pb-12 pl-3 lg:py-0"><div class="pl-3"><a aria-label="linkedin" class="inline-flex w-12 h-12 justify-center items-center rounded-full -ml-3 bg-front text-back-light hover:shadow-lg transition-shadow duration-150" href="https://linkedin.com/in/itsianmac" rel="noopener noreferrer" target="_blank"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="w-6 h-6" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></a><a aria-label="twitter" class="inline-flex w-12 h-12 justify-center items-center rounded-full -ml-3 bg-back-light text-front hover:shadow-lg transition-shadow duration-150" href="https://twitter.com/itsianmac" rel="noopener noreferrer" target="_blank"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="w-6 h-6" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a><a aria-label="github" class="inline-flex w-12 h-12 justify-center items-center rounded-full -ml-3 bg-front text-back-light hover:shadow-lg transition-shadow duration-150" href="https://github.com/itsianmac" rel="noopener noreferrer" target="_blank"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" class="w-6 h-6" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a></div></div><br/><br/></div></div></aside><main class="lg:w-2/3 lg:pl-8 xl:pl-12"><div class="flex pb-8"><div class="w-1/2 pr-4 lg:pr-12 border-r border-line"><h5 class="font-header font-bold text-front text-xl uppercase">Contact</h5><h3 class="font-header font-normal text-2xl text-front leading-tight break-words">{firstname}mac @ yorku.eecs.ca</h3></div><div class="w-1/2 pl-4 lg:pl-12"><h5 class="font-header font-bold text-front text-xl uppercase">Focused on</h5><div class="font-header font-normal text-2xl text-front leading-tight">Computer Vision</div></div></div><div class="flex flex-wrap"><div class="md:w-3/4 pb-12 md:pr-8 lg:pr-12 xl:pr-20"></div><div class="md:w-1/4 pb-12"></div></div><h5 class="font-header font-semibold text-xl text-sm uppercase mb-3">About</h5><div class="font-text text-lg pb-12 leading-normal whitespace-pre-line">I am Michael Brown&#x27;s Masters student in the Department of Electrical Engineering and Computer Science at York University. 
-I have a range of experience from deep learning &amp; computer vision, venture capital, software consulting, and sales.
-</div><h5 class="font-header font-semibold text-front text-xl uppercase mb-3">Projects</h5><div class="border-t-4 border-line relative flex flex-wrap bg-back-light p-4 lg:p-8 bg-no-repeat text-sm mb-6"><div class="lg:flex-1"><h4 class="font-bold text-xl">Coming Soon!</h4><p class="w-full py-4 whitespace-pre-line text-lg">Projects will be shared here soon.</p><ul class="pr-2"></ul><span class="absolute right-0 bottom-0 mb-5 mr-5 text-back"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" class="w-6 h-6" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M225.38 233.37c-12.5 12.5-12.5 32.76 0 45.25 12.49 12.5 32.76 12.5 45.25 0 12.5-12.5 12.5-32.76 0-45.25-12.5-12.49-32.76-12.49-45.25 0zM248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm126.14 148.05L308.17 300.4a31.938 31.938 0 0 1-15.77 15.77l-144.34 65.97c-16.65 7.61-33.81-9.55-26.2-26.2l65.98-144.35a31.938 31.938 0 0 1 15.77-15.77l144.34-65.97c16.65-7.6 33.8 9.55 26.19 26.2z"></path></svg></span></div></div><h5 class="font-header font-semibold text-front text-xl uppercase mt-12 mb-3 text-center">Work history</h5><div class="history flex flex-col relative pt-6 pb-6"><div class="history-entry relative w-1/2 py-4"><span class="dot-bg w-14 h-14 absolute bg-line inline-flex rounded-full items-center justify-center"><span class="dot w-5 h-5 bg-back-light rounded-full"></span></span><h4 class="subpixel-antialiased text-lg">Change Healthcare</h4><h5 class="text-sm font-normal mb-1">Software Engineer - AI Lab</h5><span class="text-sm font-medium opacity-50">June 2021 - September 2021</span></div><div class="history-entry relative w-1/2 py-4"><span class="dot-bg w-14 h-14 absolute bg-line inline-flex rounded-full items-center justify-center"><span class="dot w-5 h-5 bg-back-light rounded-full"></span></span><h4 class="subpixel-antialiased"><a href="https://atomic.studio" target="_blank" rel="noopener noreferrer" class="hover:opacity-75 transition-opacity duration-150">Alto Consulting Group</a></h4><h5 class="text-sm font-normal mb-1">Principal</h5><span class="text-sm font-medium opacity-50">May 2018 - present</span></div><div class="history-entry relative w-1/2 py-4"><span class="dot-bg w-14 h-14 absolute bg-line inline-flex rounded-full items-center justify-center"><span class="dot w-5 h-5 bg-back-light rounded-full"></span></span><h4 class="subpixel-antialiased text-lg">Front Row Ventures</h4><h5 class="text-sm font-normal mb-1">Director of Investments</h5><span class="text-sm font-medium opacity-50">May 2020 - May 2021</span></div><div class="history-entry relative w-1/2 py-4"><span class="dot-bg w-14 h-14 absolute bg-line inline-flex rounded-full items-center justify-center"><span class="dot w-5 h-5 bg-back-light rounded-full"></span></span><h4 class="subpixel-antialiased text-lg">Front Row Ventures</h4><h5 class="text-sm font-normal mb-1">Investment Associate</h5><span class="text-sm font-medium opacity-50">May 2019 - May 2020</span></div><div class="history-entry relative w-1/2 py-4"><span class="dot-bg w-14 h-14 absolute bg-line inline-flex rounded-full items-center justify-center"><span class="dot w-5 h-5 bg-back-light rounded-full"></span></span><h4 class="subpixel-antialiased text-lg">Tread</h4><h5 class="text-sm font-normal mb-1">Front End Developer</h5><span class="text-sm font-medium opacity-50">August 2016 - May 2018</span></div><div class="history-entry relative w-1/2 py-4"><span class="dot-bg w-14 h-14 absolute bg-line inline-flex rounded-full items-center justify-center"><span class="dot w-5 h-5 bg-back-light rounded-full"></span></span><h4 class="subpixel-antialiased text-lg">Joist</h4><h5 class="text-sm font-normal mb-1">Sales &amp; IT</h5><span class="text-sm font-medium opacity-50">June 2015 - August 2016</span></div></div></main></div><footer class="bg-front mt-16 pt-8 pb-16"><div class="md:max-w-screen-sm lg:max-w-screen-xl mx-auto px-4 flex items-center"><div class="w-2/3 text-back-light font-header text-xs"><b>© <!-- -->2021<!-- --> <!-- -->Ian MacPherson<!-- -->.</b> <!-- -->All rights reserved.<br/><br/><a href="https://weeby.studio/intro/">Theme modified from: Intro</a></div></div></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-90a102fc10d08d9f7ff8.js"],"app":["/app-9a9fa1cda9fed2038ac5.js"],"component---src-pages-404-js":["/component---src-pages-404-js-2575e87340421ddb518a.js"],"component---src-templates-index-js":["/component---src-templates-index-js-3bc2c5d76aaf3437197f.js"]};/*]]>*/</script><script src="/polyfill-90a102fc10d08d9f7ff8.js" nomodule=""></script><script src="/component---src-templates-index-js-3bc2c5d76aaf3437197f.js" async=""></script><script src="/commons-4155760f5a03699894f8.js" async=""></script><script src="/1bfc9850-1d956532b124936204ba.js" async=""></script><script src="/app-9a9fa1cda9fed2038ac5.js" async=""></script><script src="/framework-0d0fa4b1796dec5a504e.js" async=""></script><script src="/webpack-runtime-6fc40da109563e003296.js" async=""></script></body></html>
+  <title>Ian MacPherson</title>
+  <meta name='description' content='Ian MacPherson's Personal Webpage.'>
+
+  <link rel="canonical" href="/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ian MacPherson">
+  <meta name="twitter:description" content="Ian MacPherson&apos;s Personal Webpage.">
+  <meta name="twitter:image:src" content="/images/01.jpeg">
+
+  <!-- Facebook OpenGraph -->
+  <meta property="og:title" content="Ian MacPherson">
+  <meta property="og:description" content="Ian MacPherson&apos;s Personal Webpage.">
+  <meta property="og:image" content="/images/01.jpeg">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- Ionicons -->
+  <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/main.css">
+</head>
+
+<body>
+
+    
+
+    <!-- begin header -->
+<header class="c-header">
+  <div class="container">
+    <div class="row">
+      <div class="c-header__inner">
+
+        <div class="logo">
+          <a class="logo__link" href="/">
+          
+            <img class="logo__image" src="/images/imlogo.png" alt="Ian MacPherson">
+          
+          </a>
+        </div>
+
+        <nav class="main-nav">
+          <div class="main-nav__box">
+
+            <div class="nav__icon-close">
+              <i class="ion ion-md-close"></i>
+            </div>
+
+            <div class="nav__title">Menu</div>
+
+              <ul class="nav__list list-reset">
+
+              
+                
+                <li class="nav__item">
+                  <a href="/" class="nav__link active-link">Home</a>
+                </li>
+                
+              
+                
+                <li class="nav__item">
+                  <a href="/projects/" class="nav__link">Projects</a>
+                </li>
+                
+              
+
+            </ul>
+          </div>
+
+          <!--bookshop-live name(social-link.jekyll.html) params() context() -->
+          
+<div class="social">
+  <ul class="social__list list-reset">
+    
+    <li class="social__item">
+      <a class="social__link" href="https://twitter.com/itsianmac" target="_blank" rel="noopener" aria-label="twitter icon"><i class="ion ion-logo-twitter"></i></a>
+    </li>
+    
+    <li class="social__item">
+      <a class="social__link" href="https://github.com/itsianmac" target="_blank" rel="noopener" aria-label="github icon"><i class="ion ion-logo-github"></i></a>
+    </li>
+    
+    <li class="social__item">
+      <a class="social__link" href="https://linkedin.com/in/itsianmac" target="_blank" rel="noopener" aria-label="linkedin icon"><i class="ion ion-logo-linkedin"></i></a>
+    </li>
+    
+  </ul>
+</div>
+
+          <!--bookshop-live end-->
+        </nav>
+
+        <div class="nav-button">
+          <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end header -->
+
+    <!-- UNUSED SECTIONS -->
+<!-- - _bookshop_name: newsletter
+newsletter_title: Join my mailing list
+newsletter_description: Get inspiration, updates and, cool stuff!
+newsletter_identifier: >-
+  frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
+newsletter_button: Subscribe
+- _bookshop_name: contact-form
+form_title: Get in touch
+form_description: Vonge comes with a built-in contact form.
+form_submission_email: site@example.com
+form_button_text: Send now -->
+
+
+    <!--
+        Bookshop components are accessed using the bookshop tag,
+        using the same syntax as the standard Jekyll include tag.
+    -->
+    <!--bookshop-live name(page.jekyll.html) params(content_blocks=page.content_blocks page_theme=page.page_theme) context() -->
+          
+<div class="c-page">
+
+
+    <!--bookshop-live name(hero/hero.jekyll.html) params(bind=block) context(block=content_blocks[0]) -->
+          <!-- begin hero -->
+
+<section class="c-hero animate">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="c-hero__inner">
+
+          <div class="c-hero__left">
+            <h1 class="c-hero__title">Ian MacPherson</h1>
+            <div class="c-hero__description"><p>Currently researching <strong>Computer Vision</strong> &amp; <strong>Computational Photography</strong> at <strong>York University</strong>.</p></div>
+            <div class="c-hero__btn">
+              <a href="#contact" class="cta-button c-button c-button--primary c-button--small">Get in touch</a>
+              <a class="works-button c-button c-button--secondary c-button--small" href="#projects">
+                <span class="circle-bg"><i class="ion ion-md-arrow-down button-arrow"></i></span> See my work
+              </a>
+            </div>
+          </div>
+
+          <div class="c-hero__right">
+            <div class="c-hero__image">
+              <img loading="lazy" src="/images/01.jpeg" alt="">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end hero -->
+          <!--bookshop-live end-->
+
+    <!--bookshop-live name(projects-section/projects-section.jekyll.html) params(bind=block) context(block=content_blocks[1]) -->
+          <!-- begin projects -->
+<section class="section projects" id="projects">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="contaniner__inner animate">
+
+          <div class="section__info">
+            <div class="section__head">
+              <h2 class="section__title">Projects</h2>
+              <a class="section__link" href="/projects">View all <i class="ion ion-md-arrow-forward"></i></a>
+            </div>
+            <div class="section__description"></div>
+          </div>
+
+          
+          <div class="row">
+            
+              
+                <!--bookshop-live name(project-card/project-card.jekyll.html) params(project=project) context(project=site.projects[0]) -->
+          
+<article class="c-project-card col col-4 col-d-6 col-t-12">
+  <div class="c-project-card__content">
+    <a href="/project/ricoh-theta" class="c-project-card__image">
+      <img loading="lazy" src="/images/calibrated-ricoh-theta.jpg" alt="A 360° Omnidirectional Photometer using a Ricoh Theta Z1">
+    </a>
+    <div class="c-project-card__info">
+      <div class="c-project-card__info-wrap">
+        <h3 class="c-project-card__title">A 360° Omnidirectional Photometer using a Ricoh Theta Z1</h3>
+      </div>
+      <div class="c-project-card__info-wrap">
+        
+        <div class="c-project-card__subtitle">Color Imaging Conference (CIC30) 2022</div>
+        
+      </div>
+    </div>
+  </div>
+</article>
+          <!--bookshop-live end-->
+              
+            
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end projects -->
+          <!--bookshop-live end-->
+
+    <!--bookshop-live name(testimonials-section/testimonials-section.jekyll.html) params(bind=block) context(block=content_blocks[2]) -->
+          <!-- begin testimonials -->
+<section class="section testimonials animate">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+
+        <div class="section__info">
+          <div class="section__head">
+            <h2 class="section__title">Work History</h2>
+            <ul class="controls list-reset" id="customize-controls" aria-label="Slider Navigation" tabindex="0">
+              <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+                <i class="ion ion-ios-arrow-back"></i>
+              </li>
+              <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+                <i class="ion ion-ios-arrow-forward"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="section__description"><p>
+  I have a range of experience from door-to-door sales,
+  venture capital, software development and computer science research.
+</p></div>
+        </div>
+
+        
+        <div class="testimonials__slider my-slider">
+          
+            <!--bookshop-live name(testimonial-card/testimonial-card.jekyll.html) params(testimonial-item=testimonial-item) context(testimonial=item=site.testimonials[0]) -->
+          
+<div class="c-testimonial-card">
+  <div class="c-testimonial-card__content">
+    <div class="c-testimonial-card__client-meta">
+      
+        <div class="c-testimonial-card__image-container">
+          <img class="c-testimonial-card__client-avatar" src="images/vital-logo.jpeg" alt="Vital Bio">
+        </div>
+      
+      <div class="c-testimonial-card__client-info">
+        
+          <h3 class="c-testimonial-card__client-name">Vital Bio</h3>
+        
+        
+        <p class="c-testimonial-card__client-name">Imaging Researcher</p>
+        
+        <!-- 
+          <p class="c-testimonial-card__client-position">Present</p>
+         -->
+
+      </div>
+    </div>
+    
+      <p class="c-testimonial-card__client-text">🤫</p>
+    
+  </div>
+</div>
+          <!--bookshop-live end-->
+          
+            <!--bookshop-live name(testimonial-card/testimonial-card.jekyll.html) params(testimonial-item=testimonial-item) context(testimonial=item=site.testimonials[1]) -->
+          
+<div class="c-testimonial-card">
+  <div class="c-testimonial-card__content">
+    <div class="c-testimonial-card__client-meta">
+      
+        <div class="c-testimonial-card__image-container">
+          <img class="c-testimonial-card__client-avatar" src="images/change-health-logo.jpeg" alt="Change Healthcare">
+        </div>
+      
+      <div class="c-testimonial-card__client-info">
+        
+          <h3 class="c-testimonial-card__client-name">Change Healthcare</h3>
+        
+        
+        <p class="c-testimonial-card__client-name">Deep Learning & Computer Vision</p>
+        
+        <!--  -->
+
+      </div>
+    </div>
+    
+      <p class="c-testimonial-card__client-text">Predictive models on large medical imaging datasets.</p>
+    
+  </div>
+</div>
+          <!--bookshop-live end-->
+          
+            <!--bookshop-live name(testimonial-card/testimonial-card.jekyll.html) params(testimonial-item=testimonial-item) context(testimonial=item=site.testimonials[2]) -->
+          
+<div class="c-testimonial-card">
+  <div class="c-testimonial-card__content">
+    <div class="c-testimonial-card__client-meta">
+      
+        <div class="c-testimonial-card__image-container">
+          <img class="c-testimonial-card__client-avatar" src="images/alto-logo.jpeg" alt="Alto Consulting Group">
+        </div>
+      
+      <div class="c-testimonial-card__client-info">
+        
+          <h3 class="c-testimonial-card__client-name">Alto Consulting Group</h3>
+        
+        
+        <p class="c-testimonial-card__client-name">Sales, Scoping, Building</p>
+        
+        <!--  -->
+
+      </div>
+    </div>
+    
+      <p class="c-testimonial-card__client-text">Computer vision, machine learning, and digital product consulting.</p>
+    
+  </div>
+</div>
+          <!--bookshop-live end-->
+          
+            <!--bookshop-live name(testimonial-card/testimonial-card.jekyll.html) params(testimonial-item=testimonial-item) context(testimonial=item=site.testimonials[3]) -->
+          
+<div class="c-testimonial-card">
+  <div class="c-testimonial-card__content">
+    <div class="c-testimonial-card__client-meta">
+      
+        <div class="c-testimonial-card__image-container">
+          <img class="c-testimonial-card__client-avatar" src="images/frv-logo.png" alt="Front Row Ventures">
+        </div>
+      
+      <div class="c-testimonial-card__client-info">
+        
+          <h3 class="c-testimonial-card__client-name">Front Row Ventures</h3>
+        
+        
+        <p class="c-testimonial-card__client-name">Director of Investments</p>
+        
+        <!--  -->
+
+      </div>
+    </div>
+    
+      <p class="c-testimonial-card__client-text">Leading pre-seed investments for Real Venture's student-focused fund.</p>
+    
+  </div>
+</div>
+          <!--bookshop-live end-->
+          
+            <!--bookshop-live name(testimonial-card/testimonial-card.jekyll.html) params(testimonial-item=testimonial-item) context(testimonial=item=site.testimonials[4]) -->
+          
+<div class="c-testimonial-card">
+  <div class="c-testimonial-card__content">
+    <div class="c-testimonial-card__client-meta">
+      
+        <div class="c-testimonial-card__image-container">
+          <img class="c-testimonial-card__client-avatar" src="images/tread-logo.jpeg" alt="Tread">
+        </div>
+      
+      <div class="c-testimonial-card__client-info">
+        
+          <h3 class="c-testimonial-card__client-name">Tread</h3>
+        
+        
+        <p class="c-testimonial-card__client-name">Software Developer</p>
+        
+        <!--  -->
+
+      </div>
+    </div>
+    
+      <p class="c-testimonial-card__client-text">Fullstack developer, built MVP of product alongside CTO to win first clients and raise VC funding.</p>
+    
+  </div>
+</div>
+          <!--bookshop-live end-->
+          
+            <!--bookshop-live name(testimonial-card/testimonial-card.jekyll.html) params(testimonial-item=testimonial-item) context(testimonial=item=site.testimonials[5]) -->
+          
+<div class="c-testimonial-card">
+  <div class="c-testimonial-card__content">
+    <div class="c-testimonial-card__client-meta">
+      
+        <div class="c-testimonial-card__image-container">
+          <img class="c-testimonial-card__client-avatar" src="images/joist-logo.png" alt="Joist">
+        </div>
+      
+      <div class="c-testimonial-card__client-info">
+        
+          <h3 class="c-testimonial-card__client-name">Joist</h3>
+        
+        
+        <p class="c-testimonial-card__client-name">Sales, IT</p>
+        
+        <!--  -->
+
+      </div>
+    </div>
+    
+      <p class="c-testimonial-card__client-text">Senior sales representative, IT manager.</p>
+    
+  </div>
+</div>
+          <!--bookshop-live end-->
+          
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end testimonials -->
+          <!--bookshop-live end-->
+
+    <!--bookshop-live name(contact-form/contact-form.jekyll.html) params(bind=block) context(block=content_blocks[3]) -->
+          <!-- begin contact -->
+
+<div class="c-contact-form" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+
+        <div class="c-contact-form__form-box">
+          <div class="c-contact-form__contact-head">
+            <h2 class="c-contact-form__contact-title">Get in touch</h2>
+            <p class="c-contact-form__contact-description">(first name)mac (at) yorku . ca</p>
+            <p>No spaces in the email above. I will respond as soon as possible. Please don't email me if you are a 🤖.</p>
+          </div>
+          <!-- No backend -->
+          <!-- <form class="c-contact-form__form"
+            action=""
+            method="POST">
+            <input type="hidden" name="_to" value="(first name)mac (at) yorku . ca">
+            <div class="c-contact-form__form-group">
+              <label class="c-contact-form__form-label screen-reader-text" for="form-name">Your Name</label>
+              <input class="c-contact-form__form-input" id="form-name" type="text" name="name" placeholder="Your name..." required>
+            </div>
+            <div class="c-contact-form__form-group">
+              <label class="c-contact-form__form-label screen-reader-text" for="form-email">Your Email</label>
+              <input class="c-contact-form__form-input" id="form-email" type="email" name="_replyto" placeholder="Your email..."
+                required>
+            </div>
+            <div class="c-contact-form__form-group">
+              <label class="c-contact-form__form-label screen-reader-text" for="form-text">Your Message</label>
+              <textarea class="c-contact-form__form-input" id="form-text" name="text" rows="9" placeholder="Your message..."
+                required></textarea>
+            </div>
+            <div class="c-contact-form__form-group c-contact-form__form-group--button">
+              <button class="c-button c-button--primary c-button--large" type="submit"></button>
+            </div>
+          </form> -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end contact -->
+          <!--bookshop-live end-->
+
+
+</div>
+
+          <!--bookshop-live end-->
+
+    <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
+
+    <!-- begin footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+
+        <!--bookshop-live name(social-link.jekyll.html) params() context() -->
+          
+<div class="social">
+  <ul class="social__list list-reset">
+    
+    <li class="social__item">
+      <a class="social__link" href="https://twitter.com/itsianmac" target="_blank" rel="noopener" aria-label="twitter icon"><i class="ion ion-logo-twitter"></i></a>
+    </li>
+    
+    <li class="social__item">
+      <a class="social__link" href="https://github.com/itsianmac" target="_blank" rel="noopener" aria-label="github icon"><i class="ion ion-logo-github"></i></a>
+    </li>
+    
+    <li class="social__item">
+      <a class="social__link" href="https://linkedin.com/in/itsianmac" target="_blank" rel="noopener" aria-label="linkedin icon"><i class="ion ion-logo-linkedin"></i></a>
+    </li>
+    
+  </ul>
+</div>
+
+          <!--bookshop-live end-->
+
+        <ul class="footer_nav list-reset">
+          
+          <li class="footer_nav__item">
+            <a href="/" class="footer_nav__link">Home</a>
+          </li>
+          
+          <li class="footer_nav__item">
+            <a href="/projects/" class="footer_nav__link">Projects</a>
+          </li>
+          
+        </ul>
+
+        <div class="copyright"></div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->
+
+    <!--
+        load the live component for CloudCannon live previews.
+    -->
+    <script>
+(function(){
+  const bookshopLiveSetup = (CloudCannon) => {
+    CloudCannon.enableEvents();
+
+    const head = document.querySelector('head');
+    const script = document.createElement('script');
+    script.src = `/_cloudcannon/bookshop-live.js`;
+    script.onload = function() {
+      window.bookshopLive = new window.BookshopLive({
+        remoteGlobals: ['/_cloudcannon/bookshop-site-data.json']
+      });
+      const updateBookshopLive = async () => {
+        const frontMatter = await CloudCannon.value();
+        const options = window.bookshopLiveOptions || {};
+        await window.bookshopLive.update({page: frontMatter}, options);
+        CloudCannon?.refreshInterface?.();
+      }
+      document.addEventListener('cloudcannon:update', updateBookshopLive);
+      updateBookshopLive();
+    }
+    head.appendChild(script);
+  }
+
+  document.addEventListener('cloudcannon:load', function (e) {
+    bookshopLiveSetup(e.detail.CloudCannon);
+  });
+})();
+</script>
+
+    <script src="/js/scripts.js"></script>
+    <script src="/js/common.js"></script>
+</body>
+</html>

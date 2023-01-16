@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A 360° Omnidirectional Photometer using a Ricoh Theta Z1</title>
+  <meta name='description' content='Ian MacPherson's Personal Webpage.'>
+
+  <link rel="canonical" href="/project/ricoh-theta">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="A 360° Omnidirectional Photometer using a Ricoh Theta Z1 – Ian MacPherson">
+  <meta name="twitter:description" content="
+
+Abstract
+Spot photometers measure the luminance that is emitted or reflected from a small surface
+area in a physical environment. Because the measurement is limited to a “spot,” capturing dense
+luminance readings for an entire environment is impractical. In this project, preliminary results are
+provided which demonstrate the potential of using an off-the-shelf commercial camera to operate as
+a 360° luminance meter. The method uses the Ricoh Theta Z1 camera, which provides a full 360° omnidirectional
+field of view and an API to access the camera’s minimally processed RAW images. Working from the RAW images,
+a calibration method is described to map the RAW images under different exposures and ISO settings to luminance values.
+By combining the calibrated sensor with multi-exposure high-dynamic-range imaging, a cost-effective mechanism to capture dense
+luminance maps of environments is provided. Early results show that using the Ricoh Theta as a luminance meter performs
+well when validated against a significantly more expensive spot photometer.
+">
+  <meta name="twitter:image:src" content="/images/calibrated-ricoh-theta.jpg">
+
+  <!-- Facebook OpenGraph -->
+  <meta property="og:title" content="A 360° Omnidirectional Photometer using a Ricoh Theta Z1 – Ian MacPherson">
+  <meta property="og:description" content="
+
+Abstract
+Spot photometers measure the luminance that is emitted or reflected from a small surface
+area in a physical environment. Because the measurement is limited to a “spot,” capturing dense
+luminance readings for an entire environment is impractical. In this project, preliminary results are
+provided which demonstrate the potential of using an off-the-shelf commercial camera to operate as
+a 360° luminance meter. The method uses the Ricoh Theta Z1 camera, which provides a full 360° omnidirectional
+field of view and an API to access the camera’s minimally processed RAW images. Working from the RAW images,
+a calibration method is described to map the RAW images under different exposures and ISO settings to luminance values.
+By combining the calibrated sensor with multi-exposure high-dynamic-range imaging, a cost-effective mechanism to capture dense
+luminance maps of environments is provided. Early results show that using the Ricoh Theta as a luminance meter performs
+well when validated against a significantly more expensive spot photometer.
+">
+  <meta property="og:image" content="/images/calibrated-ricoh-theta.jpg">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- Ionicons -->
+  <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/main.css">
+</head>
+
+<body>
+
+    
+
+    <!-- begin header -->
+<header class="c-header">
+  <div class="container">
+    <div class="row">
+      <div class="c-header__inner">
+
+        <div class="logo">
+          <a class="logo__link" href="/">
+          
+            <img class="logo__image" src="/images/imlogo.png" alt="Ian MacPherson">
+          
+          </a>
+        </div>
+
+        <nav class="main-nav">
+          <div class="main-nav__box">
+
+            <div class="nav__icon-close">
+              <i class="ion ion-md-close"></i>
+            </div>
+
+            <div class="nav__title">Menu</div>
+
+              <ul class="nav__list list-reset">
+
+              
+                
+                <li class="nav__item">
+                  <a href="/" class="nav__link">Home</a>
+                </li>
+                
+              
+                
+                <li class="nav__item">
+                  <a href="/projects/" class="nav__link">Projects</a>
+                </li>
+                
+              
+
+            </ul>
+          </div>
+
+          <!--bookshop-live name(social-link.jekyll.html) params() context() -->
+          
+<div class="social">
+  <ul class="social__list list-reset">
+    
+    <li class="social__item">
+      <a class="social__link" href="https://twitter.com/itsianmac" target="_blank" rel="noopener" aria-label="twitter icon"><i class="ion ion-logo-twitter"></i></a>
+    </li>
+    
+    <li class="social__item">
+      <a class="social__link" href="https://github.com/itsianmac" target="_blank" rel="noopener" aria-label="github icon"><i class="ion ion-logo-github"></i></a>
+    </li>
+    
+    <li class="social__item">
+      <a class="social__link" href="https://linkedin.com/in/itsianmac" target="_blank" rel="noopener" aria-label="linkedin icon"><i class="ion ion-logo-linkedin"></i></a>
+    </li>
+    
+  </ul>
+</div>
+
+          <!--bookshop-live end-->
+        </nav>
+
+        <div class="nav-button">
+          <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+<!-- end header -->
+
+    <div class="container">
+
+  <!--bookshop-live name(page-heading/page-heading.jekyll.html) params(title=page.title description=page.subtitle) context() -->
+          
+<div class="container">
+  <div class="c-page-heading">
+    <h1 class="c-page-heading__title">A 360° Omnidirectional Photometer using a Ricoh Theta Z1</h1>
+    
+      <p class="c-page-heading__description">Color Imaging Conference (CIC30) 2022</p>
+    
+  </div>
+</div>
+          <!--bookshop-live end-->
+  
+  <!--bookshop-live name(page-image/page-image.jekyll.html) params(image=page_image) context() -->
+          
+<div class="container">
+  <div class="row">
+    <div class="col col-12">
+      <div class="c-page-image animate">
+        <img loading="lazy" src="/images/calibrated-ricoh-theta.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+          <!--bookshop-live end-->
+
+  <div class="page animate">
+    <!-- Note, can add additional images like the example below -->
+<!-- ![Palm trees](/images/image-example-3.jpg){: width="1200" height="900"} -->
+<h2 id="abstract">Abstract</h2>
+<p>Spot photometers measure the luminance that is emitted or reflected from a small surface
+area in a physical environment. Because the measurement is limited to a “spot,” capturing dense
+luminance readings for an entire environment is impractical. In this project, preliminary results are
+provided which demonstrate the potential of using an off-the-shelf commercial camera to operate as
+a 360° luminance meter. The method uses the Ricoh Theta Z1 camera, which provides a full 360° omnidirectional
+field of view and an API to access the camera’s minimally processed RAW images. Working from the RAW images,
+a calibration method is described to map the RAW images under different exposures and ISO settings to luminance values.
+By combining the calibrated sensor with multi-exposure high-dynamic-range imaging, a cost-effective mechanism to capture dense
+luminance maps of environments is provided. Early results show that using the Ricoh Theta as a luminance meter performs
+well when validated against a significantly more expensive spot photometer.</p>
+
+
+    <div style="text-align:center">
+            <a href="/pdf/ricoh-theta" class="c-button c-button--secondary c-button--small" >
+                <span>Download PDF <i class="ion ion ion-md-arrow-down"></i></span>
+            </a>
+    </div>
+  </div>
+
+  
+
+</div>
+
+<!-- Wrap in jekyll identifier similar to above if you ever have a newsletter... -->
+<!-- bookshop
+  newsletter newsletter_title=site.data.newsletter.newsletter_title
+  newsletter_description=site.data.newsletter.newsletter_description
+  newsletter_identifier=site.data.newsletter.newsletter_identifier
+  newsletter_button=site.data.newsletter.newsletter_button -->
+
+
+    <!--
+        Bookshop components are accessed using the bookshop tag,
+        using the same syntax as the standard Jekyll include tag.
+    -->
+    <!--bookshop-live name(page.jekyll.html) params(content_blocks=page.content_blocks page_theme=page.page_theme) context() -->
+          
+          <!--bookshop-live end-->
+
+    <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
+
+    <!-- begin footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+
+        <!--bookshop-live name(social-link.jekyll.html) params() context() -->
+          
+<div class="social">
+  <ul class="social__list list-reset">
+    
+    <li class="social__item">
+      <a class="social__link" href="https://twitter.com/itsianmac" target="_blank" rel="noopener" aria-label="twitter icon"><i class="ion ion-logo-twitter"></i></a>
+    </li>
+    
+    <li class="social__item">
+      <a class="social__link" href="https://github.com/itsianmac" target="_blank" rel="noopener" aria-label="github icon"><i class="ion ion-logo-github"></i></a>
+    </li>
+    
+    <li class="social__item">
+      <a class="social__link" href="https://linkedin.com/in/itsianmac" target="_blank" rel="noopener" aria-label="linkedin icon"><i class="ion ion-logo-linkedin"></i></a>
+    </li>
+    
+  </ul>
+</div>
+
+          <!--bookshop-live end-->
+
+        <ul class="footer_nav list-reset">
+          
+          <li class="footer_nav__item">
+            <a href="/" class="footer_nav__link">Home</a>
+          </li>
+          
+          <li class="footer_nav__item">
+            <a href="/projects/" class="footer_nav__link">Projects</a>
+          </li>
+          
+        </ul>
+
+        <div class="copyright"></div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->
+
+    <!--
+        load the live component for CloudCannon live previews.
+    -->
+    <script>
+(function(){
+  const bookshopLiveSetup = (CloudCannon) => {
+    CloudCannon.enableEvents();
+
+    const head = document.querySelector('head');
+    const script = document.createElement('script');
+    script.src = `/_cloudcannon/bookshop-live.js`;
+    script.onload = function() {
+      window.bookshopLive = new window.BookshopLive({
+        remoteGlobals: ['/_cloudcannon/bookshop-site-data.json']
+      });
+      const updateBookshopLive = async () => {
+        const frontMatter = await CloudCannon.value();
+        const options = window.bookshopLiveOptions || {};
+        await window.bookshopLive.update({page: frontMatter}, options);
+        CloudCannon?.refreshInterface?.();
+      }
+      document.addEventListener('cloudcannon:update', updateBookshopLive);
+      updateBookshopLive();
+    }
+    head.appendChild(script);
+  }
+
+  document.addEventListener('cloudcannon:load', function (e) {
+    bookshopLiveSetup(e.detail.CloudCannon);
+  });
+})();
+</script>
+
+    <script src="/js/scripts.js"></script>
+    <script src="/js/common.js"></script>
+</body>
+</html>
